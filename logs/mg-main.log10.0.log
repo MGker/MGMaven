@@ -1,510 +1,109 @@
-2018-07-09 10:33:03,751 [restartedMain] INFO Application - Starting Application on WINDOWS-UNEE9VK with PID 9004 (F:\IDEAWorkSpace\MGMavenTest\target\classes started by Administrator in F:\IDEAWorkSpace\MGMavenTest)
-2018-07-09 10:33:03,757 [restartedMain] INFO Application - No active profile set, falling back to default profiles: default
-2018-07-09 10:33:04,192 [background-preinit] INFO Version - HV000001: Hibernate Validator 5.3.6.Final
-2018-07-09 10:33:04,406 [restartedMain] INFO AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a88372d: startup date [Mon Jul 09 10:33:04 CST 2018]; root of context hierarchy
-2018-07-09 10:33:07,091 [restartedMain] INFO TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 80 (http)
-2018-07-09 10:33:07,111 [restartedMain] INFO StandardService - Starting service [Tomcat]
-2018-07-09 10:33:07,113 [restartedMain] INFO StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
-2018-07-09 10:33:07,309 [localhost-startStop-1] INFO [/] - Initializing Spring embedded WebApplicationContext
-2018-07-09 10:33:07,310 [localhost-startStop-1] INFO ContextLoader - Root WebApplicationContext: initialization completed in 2904 ms
-2018-07-09 10:33:07,573 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-07-09 10:33:07,574 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-07-09 10:33:07,574 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-07-09 10:33:07,574 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
-2018-07-09 10:33:07,574 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'MyFilter' to urls: [/*]
-2018-07-09 10:33:07,575 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'remoteIpFilter' to: [/*]
-2018-07-09 10:33:07,575 [localhost-startStop-1] INFO ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
-2018-07-09 10:33:08,172 [restartedMain] INFO RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a88372d: startup date [Mon Jul 09 10:33:04 CST 2018]; root of context hierarchy
-2018-07-09 10:33:08,263 [restartedMain] INFO RequestMappingHandlerMapping - Mapped "{[/index]}" onto public java.lang.String com.mg.controller.TestController.index(org.springframework.ui.Model)
-2018-07-09 10:33:08,268 [restartedMain] INFO RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-07-09 10:33:08,268 [restartedMain] INFO RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-07-09 10:33:08,312 [restartedMain] INFO SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-07-09 10:33:08,313 [restartedMain] INFO SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-07-09 10:33:08,402 [restartedMain] INFO SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-07-09 10:33:09,150 [restartedMain] INFO OptionalLiveReloadServer - LiveReload server is running on port 35729
-2018-07-09 10:33:09,294 [restartedMain] INFO AnnotationMBeanExporter - Registering beans for JMX exposure on startup
-2018-07-09 10:33:09,352 [restartedMain] INFO Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
-2018-07-09 10:33:09,379 [restartedMain] INFO Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
-2018-07-09 10:33:09,405 [restartedMain] INFO NioSelectorPool - Using a shared selector for servlet write/read
-2018-07-09 10:33:09,452 [restartedMain] INFO TomcatEmbeddedServletContainer - Tomcat started on port(s): 80 (http)
-2018-07-09 10:33:09,463 [restartedMain] INFO Application - Started Application in 6.528 seconds (JVM running for 11.187)
-2018-07-09 10:42:38,360 [restartedMain] INFO Application - Starting Application on WINDOWS-UNEE9VK with PID 3772 (F:\IDEAWorkSpace\MGMavenTest\target\classes started by Administrator in F:\IDEAWorkSpace\MGMavenTest)
-2018-07-09 10:42:38,365 [restartedMain] INFO Application - No active profile set, falling back to default profiles: default
-2018-07-09 10:42:38,633 [background-preinit] INFO Version - HV000001: Hibernate Validator 5.3.6.Final
-2018-07-09 10:42:38,703 [restartedMain] INFO AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@f5838e4: startup date [Mon Jul 09 10:42:38 CST 2018]; root of context hierarchy
-2018-07-09 10:42:40,424 [restartedMain] INFO TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 80 (http)
-2018-07-09 10:42:40,435 [restartedMain] INFO StandardService - Starting service [Tomcat]
-2018-07-09 10:42:40,436 [restartedMain] INFO StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
-2018-07-09 10:42:40,537 [localhost-startStop-1] INFO [/] - Initializing Spring embedded WebApplicationContext
-2018-07-09 10:42:40,538 [localhost-startStop-1] INFO ContextLoader - Root WebApplicationContext: initialization completed in 1835 ms
-2018-07-09 10:42:40,765 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-07-09 10:42:40,766 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-07-09 10:42:40,766 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-07-09 10:42:40,767 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
-2018-07-09 10:42:40,767 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'MyFilter' to urls: [/*]
-2018-07-09 10:42:40,767 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'remoteIpFilter' to: [/*]
-2018-07-09 10:42:40,767 [localhost-startStop-1] INFO ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
-2018-07-09 10:42:41,216 [restartedMain] INFO RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@f5838e4: startup date [Mon Jul 09 10:42:38 CST 2018]; root of context hierarchy
-2018-07-09 10:42:41,297 [restartedMain] INFO RequestMappingHandlerMapping - Mapped "{[/index]}" onto public java.lang.String com.mg.controller.TestController.index(org.springframework.ui.Model)
-2018-07-09 10:42:41,301 [restartedMain] INFO RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-07-09 10:42:41,301 [restartedMain] INFO RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-07-09 10:42:41,349 [restartedMain] INFO SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-07-09 10:42:41,349 [restartedMain] INFO SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-07-09 10:42:41,420 [restartedMain] INFO SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-07-09 10:42:41,973 [restartedMain] INFO OptionalLiveReloadServer - LiveReload server is running on port 35729
-2018-07-09 10:42:42,111 [restartedMain] INFO AnnotationMBeanExporter - Registering beans for JMX exposure on startup
-2018-07-09 10:42:42,132 [restartedMain] INFO Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
-2018-07-09 10:42:42,142 [restartedMain] INFO Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
-2018-07-09 10:42:42,157 [restartedMain] INFO NioSelectorPool - Using a shared selector for servlet write/read
-2018-07-09 10:42:42,186 [restartedMain] INFO TomcatEmbeddedServletContainer - Tomcat started on port(s): 80 (http)
-2018-07-09 10:42:42,194 [restartedMain] INFO Application - Started Application in 4.378 seconds (JVM running for 6.511)
-2018-07-09 10:43:46,746 [http-nio-80-exec-1] INFO [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
-2018-07-09 10:43:46,746 [http-nio-80-exec-1] INFO DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
-2018-07-09 10:43:46,777 [http-nio-80-exec-1] INFO DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
-2018-07-09 10:43:56,289 [http-nio-80-exec-1] INFO TestController - info访问首页
-2018-07-09 10:43:56,289 [http-nio-80-exec-1] WARN TestController - warn访问首页
-2018-07-09 10:43:56,289 [http-nio-80-exec-1] ERROR TestController - error访问首页
-2018-07-09 10:43:56,319 [http-nio-80-exec-1] INFO TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
-2018-07-09 10:43:56,403 [http-nio-80-exec-1] INFO AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
-2018-07-09 10:43:56,403 [http-nio-80-exec-1] INFO AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
-2018-07-09 10:43:56,403 [http-nio-80-exec-1] INFO AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
-2018-07-09 10:43:56,403 [http-nio-80-exec-1] INFO AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
-2018-07-09 10:43:56,407 [http-nio-80-exec-1] INFO CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
-[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
-[THYMELEAF] * Template modes:
-[THYMELEAF]     * HTML5
-[THYMELEAF]     * XHTML
-[THYMELEAF]     * VALIDXHTML
-[THYMELEAF]     * VALIDXML
-[THYMELEAF]     * XML
-[THYMELEAF]     * LEGACYHTML5
-[THYMELEAF] * Template resolvers (in order):
-[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
-[THYMELEAF] * Message resolvers (in order):
-[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
-[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
-[THYMELEAF]     * Prefix: "th"
-[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
-[THYMELEAF]     * Prefix: "layout"
-[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
-2018-07-09 10:43:56,407 [http-nio-80-exec-1] INFO TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
-2018-07-09 10:46:19,783 [http-nio-80-exec-7] INFO TestController - info访问首页
-2018-07-09 10:46:20,946 [http-nio-80-exec-7] WARN TestController - warn访问首页
-2018-07-09 10:46:20,946 [http-nio-80-exec-7] ERROR TestController - error访问首页
-2018-07-09 15:29:16,385 [background-preinit] INFO Version - HV000001: Hibernate Validator 5.3.6.Final
-2018-07-09 15:29:16,643 [main] INFO Application - Starting Application on WINDOWS-UNEE9VK with PID 1204 (F:\IDEAWorkSpace\MGMavenTest\target\classes started by Administrator in F:\IDEAWorkSpace\MGMavenTest)
-2018-07-09 15:29:16,644 [main] INFO Application - The following profiles are active: prod
-2018-07-09 15:29:17,077 [main] INFO AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@42b43a6: startup date [Mon Jul 09 15:29:17 CST 2018]; root of context hierarchy
-2018-07-09 15:29:20,521 [main] INFO TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
-2018-07-09 15:29:20,539 [main] INFO StandardService - Starting service [Tomcat]
-2018-07-09 15:29:20,540 [main] INFO StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
-2018-07-09 15:29:20,842 [localhost-startStop-1] INFO [/] - Initializing Spring embedded WebApplicationContext
-2018-07-09 15:29:20,842 [localhost-startStop-1] INFO ContextLoader - Root WebApplicationContext: initialization completed in 3765 ms
-2018-07-09 15:29:21,212 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-07-09 15:29:21,213 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-07-09 15:29:21,213 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-07-09 15:29:21,213 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
-2018-07-09 15:29:21,213 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'MyFilter' to urls: [/*]
-2018-07-09 15:29:21,214 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'remoteIpFilter' to: [/*]
-2018-07-09 15:29:21,214 [localhost-startStop-1] INFO ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
-2018-07-09 15:29:21,308 [main] WARN AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'inMemoryDatabaseShutdownExecutor' defined in class path resource [org/springframework/boot/devtools/autoconfigure/DevToolsDataSourceAutoConfiguration.class]: Unsatisfied dependency expressed through method 'inMemoryDatabaseShutdownExecutor' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "prod" are currently active).
-2018-07-09 15:29:21,318 [main] INFO StandardService - Stopping service [Tomcat]
-2018-07-09 15:29:21,365 [main] INFO AutoConfigurationReportLoggingInitializer - 
-
-Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
-2018-07-09 15:29:21,376 [main] ERROR LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Cannot determine embedded database driver class for database type NONE
-
-Action:
-
-If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "prod" are currently active).
-
-2018-07-09 15:32:35,665 [main] INFO Application - Starting Application on WINDOWS-UNEE9VK with PID 8700 (F:\IDEAWorkSpace\MGMavenTest\target\classes started by Administrator in F:\IDEAWorkSpace\MGMavenTest)
-2018-07-09 15:32:35,669 [main] INFO Application - The following profiles are active: prod
-2018-07-09 15:32:35,958 [background-preinit] INFO Version - HV000001: Hibernate Validator 5.3.6.Final
-2018-07-09 15:32:36,169 [main] INFO AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7cb2651f: startup date [Mon Jul 09 15:32:36 CST 2018]; root of context hierarchy
-2018-07-09 15:32:38,918 [main] INFO TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
-2018-07-09 15:32:38,935 [main] INFO StandardService - Starting service [Tomcat]
-2018-07-09 15:32:38,936 [main] INFO StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
-2018-07-09 15:32:39,207 [localhost-startStop-1] INFO [/] - Initializing Spring embedded WebApplicationContext
-2018-07-09 15:32:39,208 [localhost-startStop-1] INFO ContextLoader - Root WebApplicationContext: initialization completed in 3039 ms
-2018-07-09 15:32:39,527 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-07-09 15:32:39,527 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-07-09 15:32:39,527 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-07-09 15:32:39,528 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
-2018-07-09 15:32:39,528 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'MyFilter' to urls: [/*]
-2018-07-09 15:32:39,528 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'remoteIpFilter' to: [/*]
-2018-07-09 15:32:39,528 [localhost-startStop-1] INFO ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
-2018-07-09 15:32:39,646 [main] WARN AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'inMemoryDatabaseShutdownExecutor' defined in class path resource [org/springframework/boot/devtools/autoconfigure/DevToolsDataSourceAutoConfiguration.class]: Unsatisfied dependency expressed through method 'inMemoryDatabaseShutdownExecutor' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "prod" are currently active).
-2018-07-09 15:32:39,653 [main] INFO StandardService - Stopping service [Tomcat]
-2018-07-09 15:32:39,696 [main] INFO AutoConfigurationReportLoggingInitializer - 
-
-Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
-2018-07-09 15:32:39,705 [main] ERROR LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Cannot determine embedded database driver class for database type NONE
-
-Action:
-
-If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "prod" are currently active).
-
-2018-07-09 15:38:06,307 [main] INFO Application - Starting Application on WINDOWS-UNEE9VK with PID 5248 (F:\IDEAWorkSpace\MGMavenTest\target\classes started by Administrator in F:\IDEAWorkSpace\MGMavenTest)
-2018-07-09 15:38:06,312 [main] INFO Application - The following profiles are active: prod
-2018-07-09 15:38:06,621 [background-preinit] INFO Version - HV000001: Hibernate Validator 5.3.6.Final
-2018-07-09 15:38:06,823 [main] INFO AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3f29e26: startup date [Mon Jul 09 15:38:06 CST 2018]; root of context hierarchy
-2018-07-09 15:38:09,690 [main] INFO TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
-2018-07-09 15:38:09,708 [main] INFO StandardService - Starting service [Tomcat]
-2018-07-09 15:38:09,709 [main] INFO StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
-2018-07-09 15:38:09,979 [localhost-startStop-1] INFO [/] - Initializing Spring embedded WebApplicationContext
-2018-07-09 15:38:09,979 [localhost-startStop-1] INFO ContextLoader - Root WebApplicationContext: initialization completed in 3156 ms
-2018-07-09 15:38:10,308 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-07-09 15:38:10,309 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-07-09 15:38:10,309 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-07-09 15:38:10,309 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
-2018-07-09 15:38:10,309 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'MyFilter' to urls: [/*]
-2018-07-09 15:38:10,309 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'remoteIpFilter' to: [/*]
-2018-07-09 15:38:10,310 [localhost-startStop-1] INFO ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
-2018-07-09 15:38:10,402 [main] WARN AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'inMemoryDatabaseShutdownExecutor' defined in class path resource [org/springframework/boot/devtools/autoconfigure/DevToolsDataSourceAutoConfiguration.class]: Unsatisfied dependency expressed through method 'inMemoryDatabaseShutdownExecutor' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "prod" are currently active).
-2018-07-09 15:38:10,410 [main] INFO StandardService - Stopping service [Tomcat]
-2018-07-09 15:38:10,457 [main] INFO AutoConfigurationReportLoggingInitializer - 
-
-Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
-2018-07-09 15:38:10,467 [main] ERROR LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Cannot determine embedded database driver class for database type NONE
-
-Action:
-
-If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "prod" are currently active).
-
-2018-07-09 15:48:48,768 [main] INFO Application - Starting Application on WINDOWS-UNEE9VK with PID 3844 (F:\IDEAWorkSpace\MGMavenTest\target\classes started by Administrator in F:\IDEAWorkSpace\MGMavenTest)
-2018-07-09 15:48:48,773 [main] INFO Application - The following profiles are active: prod
-2018-07-09 15:48:49,077 [background-preinit] INFO Version - HV000001: Hibernate Validator 5.3.6.Final
-2018-07-09 15:48:49,264 [main] INFO AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@344426bf: startup date [Mon Jul 09 15:48:49 CST 2018]; root of context hierarchy
-2018-07-09 15:48:52,136 [main] INFO TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
-2018-07-09 15:48:52,153 [main] INFO StandardService - Starting service [Tomcat]
-2018-07-09 15:48:52,155 [main] INFO StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
-2018-07-09 15:48:52,427 [localhost-startStop-1] INFO [/] - Initializing Spring embedded WebApplicationContext
-2018-07-09 15:48:52,427 [localhost-startStop-1] INFO ContextLoader - Root WebApplicationContext: initialization completed in 3164 ms
-2018-07-09 15:48:52,766 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-07-09 15:48:52,766 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-07-09 15:48:52,766 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-07-09 15:48:52,767 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
-2018-07-09 15:48:52,767 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'MyFilter' to urls: [/*]
-2018-07-09 15:48:52,767 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'remoteIpFilter' to: [/*]
-2018-07-09 15:48:52,767 [localhost-startStop-1] INFO ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
-2018-07-09 15:48:52,861 [main] WARN AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'inMemoryDatabaseShutdownExecutor' defined in class path resource [org/springframework/boot/devtools/autoconfigure/DevToolsDataSourceAutoConfiguration.class]: Unsatisfied dependency expressed through method 'inMemoryDatabaseShutdownExecutor' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "prod" are currently active).
-2018-07-09 15:48:52,867 [main] INFO StandardService - Stopping service [Tomcat]
-2018-07-09 15:48:52,910 [main] INFO AutoConfigurationReportLoggingInitializer - 
-
-Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
-2018-07-09 15:48:52,919 [main] ERROR LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Cannot determine embedded database driver class for database type NONE
-
-Action:
-
-If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "prod" are currently active).
-
-2018-07-09 15:51:52,147 [main] ERROR SpringApplication - Application startup failed
-java.lang.IllegalStateException: Failed to load property source from location 'classpath:/application.yml'
-	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:476)
-	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:465)
-	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:386)
-	at org.springframework.boot.context.config.ConfigFileApplicationListener.addPropertySources(ConfigFileApplicationListener.java:225)
-	at org.springframework.boot.context.config.ConfigFileApplicationListener.postProcessEnvironment(ConfigFileApplicationListener.java:195)
-	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEnvironmentPreparedEvent(ConfigFileApplicationListener.java:182)
-	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEvent(ConfigFileApplicationListener.java:168)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:122)
-	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
-	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
-	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:325)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:296)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
-	at com.mg.Application.main(Application.java:17)
-Caused by: org.yaml.snakeyaml.parser.ParserException: while parsing a block mapping
- in 'reader', line 4, column 3:
-      thymeleaf:
-      ^
-expected <block end>, but found BlockMappingStart
- in 'reader', line 8, column 4:
-       profiles: prod
-       ^
-
-	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:569)
-	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:157)
-	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:147)
-	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:224)
-	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:155)
-	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:246)
-	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:237)
-	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:225)
-	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:155)
-	at org.yaml.snakeyaml.composer.Composer.composeDocument(Composer.java:122)
-	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:84)
-	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:104)
-	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:471)
-	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:160)
-	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:138)
-	at org.springframework.boot.env.YamlPropertySourceLoader$Processor.process(YamlPropertySourceLoader.java:101)
-	at org.springframework.boot.env.YamlPropertySourceLoader.load(YamlPropertySourceLoader.java:58)
-	at org.springframework.boot.env.PropertySourcesLoader.load(PropertySourcesLoader.java:127)
-	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.doLoadIntoGroup(ConfigFileApplicationListener.java:490)
-	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:473)
-	... 17 common frames omitted
-2018-07-09 15:54:50,486 [main] ERROR SpringApplication - Application startup failed
-java.lang.IllegalStateException: Failed to load property source from location 'classpath:/application.yml'
-	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:476)
-	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:465)
-	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:386)
-	at org.springframework.boot.context.config.ConfigFileApplicationListener.addPropertySources(ConfigFileApplicationListener.java:225)
-	at org.springframework.boot.context.config.ConfigFileApplicationListener.postProcessEnvironment(ConfigFileApplicationListener.java:195)
-	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEnvironmentPreparedEvent(ConfigFileApplicationListener.java:182)
-	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEvent(ConfigFileApplicationListener.java:168)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:122)
-	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
-	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
-	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:325)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:296)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
-	at com.mg.Application.main(Application.java:17)
-Caused by: org.yaml.snakeyaml.parser.ParserException: while parsing a block mapping
- in 'reader', line 4, column 3:
-      thymeleaf:
-      ^
-expected <block end>, but found BlockMappingStart
- in 'reader', line 8, column 4:
-       profiles: prod
-       ^
-
-	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:569)
-	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:157)
-	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:147)
-	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:224)
-	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:155)
-	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:246)
-	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:237)
-	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:225)
-	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:155)
-	at org.yaml.snakeyaml.composer.Composer.composeDocument(Composer.java:122)
-	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:84)
-	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:104)
-	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:471)
-	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:160)
-	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:138)
-	at org.springframework.boot.env.YamlPropertySourceLoader$Processor.process(YamlPropertySourceLoader.java:101)
-	at org.springframework.boot.env.YamlPropertySourceLoader.load(YamlPropertySourceLoader.java:58)
-	at org.springframework.boot.env.PropertySourcesLoader.load(PropertySourcesLoader.java:127)
-	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.doLoadIntoGroup(ConfigFileApplicationListener.java:490)
-	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:473)
-	... 17 common frames omitted
-2018-07-09 15:55:38,732 [main] INFO Application - Starting Application on WINDOWS-UNEE9VK with PID 1444 (F:\IDEAWorkSpace\MGMavenTest\target\classes started by Administrator in F:\IDEAWorkSpace\MGMavenTest)
-2018-07-09 15:55:38,737 [main] INFO Application - No active profile set, falling back to default profiles: default
-2018-07-09 15:55:39,035 [background-preinit] INFO Version - HV000001: Hibernate Validator 5.3.6.Final
-2018-07-09 15:55:39,252 [main] INFO AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3e7545e8: startup date [Mon Jul 09 15:55:39 CST 2018]; root of context hierarchy
-2018-07-09 15:55:42,026 [main] INFO TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
-2018-07-09 15:55:42,043 [main] INFO StandardService - Starting service [Tomcat]
-2018-07-09 15:55:42,045 [main] INFO StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
-2018-07-09 15:55:42,351 [localhost-startStop-1] INFO [/] - Initializing Spring embedded WebApplicationContext
-2018-07-09 15:55:42,351 [localhost-startStop-1] INFO ContextLoader - Root WebApplicationContext: initialization completed in 3100 ms
-2018-07-09 15:55:42,688 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-07-09 15:55:42,689 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-07-09 15:55:42,689 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-07-09 15:55:42,689 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
-2018-07-09 15:55:42,690 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'MyFilter' to urls: [/*]
-2018-07-09 15:55:42,690 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'remoteIpFilter' to: [/*]
-2018-07-09 15:55:42,690 [localhost-startStop-1] INFO ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
-2018-07-09 15:55:44,360 [main] INFO LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
-2018-07-09 15:55:44,397 [main] INFO LogHelper - HHH000204: Processing PersistenceUnitInfo [
+2018-08-09 17:38:02,567 [background-preinit] INFO Version - HV000001: Hibernate Validator 5.3.6.Final
+2018-08-09 17:38:02,929 [main] INFO Application - Starting Application on WINDOWS-UNEE9VK with PID 7856 (F:\IDEAWorkSpace\MGMavenTest\target\classes started by Administrator in F:\IDEAWorkSpace\MGMavenTest)
+2018-08-09 17:38:02,930 [main] INFO Application - The following profiles are active: prod
+2018-08-09 17:38:03,430 [main] INFO AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5580d62f: startup date [Thu Aug 09 17:38:03 CST 2018]; root of context hierarchy
+2018-08-09 17:38:06,807 [main] INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5852cd70] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-09 17:38:07,170 [main] INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfig' of type [com.mg.common.config.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$ad1731bb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-09 17:38:07,223 [main] INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'hashedCredentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-09 17:38:07,263 [main] INFO ShiroConfiguration - myRealm注册完成
+2018-08-09 17:38:07,295 [main] INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userImpl' of type [com.mg.service.user.UserImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-09 17:38:07,336 [main] INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#282c5075' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-09 17:38:07,349 [main] INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#282c5075' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-09 17:38:07,439 [main] INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#654db80b' of type [org.springframework.data.repository.core.support.PropertiesBasedNamedQueries] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-09 17:38:07,450 [main] INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#62c6db99' of type [org.springframework.data.repository.query.ExtensionAwareEvaluationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-09 17:38:07,465 [main] INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration' of type [org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$3316dca7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-09 17:38:07,475 [main] INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-09 17:38:07,720 [main] INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-09 17:38:07,976 [main] INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [org.apache.tomcat.jdbc.pool.DataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-09 17:38:08,040 [main] INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$3a4670d0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-09 17:38:08,075 [main] INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSourceInitializer' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-09 17:38:08,089 [main] INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'inMemoryDatabaseShutdownExecutor' of type [org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$NonEmbeddedInMemoryDatabaseShutdownExecutor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-09 17:38:08,104 [main] INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties' of type [org.springframework.boot.autoconfigure.orm.jpa.JpaProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-09 17:38:08,117 [main] INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration' of type [org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$$EnhancerBySpringCGLIB$$ecc6c87a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-09 17:38:08,138 [main] INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties' of type [org.springframework.boot.autoconfigure.transaction.TransactionProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-09 17:38:08,157 [main] INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'platformTransactionManagerCustomizers' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-09 17:38:08,176 [main] INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration' of type [org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$c1d93190] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-09 17:38:09,435 [main] INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jpaVendorAdapter' of type [org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-09 17:38:09,448 [main] INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'entityManagerFactoryBuilder' of type [org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-09 17:38:09,667 [main] INFO LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-08-09 17:38:09,694 [main] INFO LogHelper - HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2018-07-09 15:55:44,598 [main] INFO Version - HHH000412: Hibernate Core {5.0.12.Final}
-2018-07-09 15:55:44,601 [main] INFO Environment - HHH000206: hibernate.properties not found
-2018-07-09 15:55:44,605 [main] INFO Environment - HHH000021: Bytecode provider name : javassist
-2018-07-09 15:55:44,911 [main] INFO Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2018-07-09 15:55:45,296 [main] INFO Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2018-07-09 15:55:46,672 [main] INFO SchemaUpdate - HHH000228: Running hbm2ddl schema update
-2018-07-09 15:55:46,709 [main] INFO InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: user
-2018-07-09 15:55:46,710 [main] INFO InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: user
-2018-07-09 15:55:48,044 [main] INFO LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2018-07-09 15:55:48,742 [main] INFO RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3e7545e8: startup date [Mon Jul 09 15:55:39 CST 2018]; root of context hierarchy
-2018-07-09 15:55:48,909 [main] INFO RequestMappingHandlerMapping - Mapped "{[/index]}" onto public java.lang.String com.mg.controller.TestController.index(org.springframework.ui.Model)
-2018-07-09 15:55:48,916 [main] INFO RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-07-09 15:55:48,916 [main] INFO RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-07-09 15:55:48,979 [main] INFO SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-07-09 15:55:48,980 [main] INFO SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-07-09 15:55:49,068 [main] INFO SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-07-09 15:55:50,117 [main] INFO OptionalLiveReloadServer - LiveReload server is running on port 35729
-2018-07-09 15:55:50,317 [main] INFO AnnotationMBeanExporter - Registering beans for JMX exposure on startup
-2018-07-09 15:55:50,378 [main] INFO Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2018-07-09 15:55:50,393 [main] INFO Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2018-07-09 15:55:50,419 [main] INFO NioSelectorPool - Using a shared selector for servlet write/read
-2018-07-09 15:55:50,516 [main] INFO TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
-2018-07-09 15:55:50,527 [main] INFO Application - Started Application in 12.577 seconds (JVM running for 18.836)
-2018-07-09 15:58:08,683 [main] INFO Application - Starting Application on WINDOWS-UNEE9VK with PID 1200 (F:\IDEAWorkSpace\MGMavenTest\target\classes started by Administrator in F:\IDEAWorkSpace\MGMavenTest)
-2018-07-09 15:58:08,688 [main] INFO Application - No active profile set, falling back to default profiles: default
-2018-07-09 15:58:09,008 [background-preinit] INFO Version - HV000001: Hibernate Validator 5.3.6.Final
-2018-07-09 15:58:09,221 [main] INFO AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2125ad3: startup date [Mon Jul 09 15:58:09 CST 2018]; root of context hierarchy
-2018-07-09 15:58:11,965 [main] INFO TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
-2018-07-09 15:58:11,983 [main] INFO StandardService - Starting service [Tomcat]
-2018-07-09 15:58:11,985 [main] INFO StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
-2018-07-09 15:58:12,290 [localhost-startStop-1] INFO [/] - Initializing Spring embedded WebApplicationContext
-2018-07-09 15:58:12,291 [localhost-startStop-1] INFO ContextLoader - Root WebApplicationContext: initialization completed in 3070 ms
-2018-07-09 15:58:12,625 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-07-09 15:58:12,626 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-07-09 15:58:12,626 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-07-09 15:58:12,626 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
-2018-07-09 15:58:12,627 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'MyFilter' to urls: [/*]
-2018-07-09 15:58:12,627 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'remoteIpFilter' to: [/*]
-2018-07-09 15:58:12,627 [localhost-startStop-1] INFO ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
-2018-07-09 15:58:13,900 [main] INFO LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
-2018-07-09 15:58:13,921 [main] INFO LogHelper - HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2018-07-09 15:58:14,044 [main] INFO Version - HHH000412: Hibernate Core {5.0.12.Final}
-2018-07-09 15:58:14,046 [main] INFO Environment - HHH000206: hibernate.properties not found
-2018-07-09 15:58:14,048 [main] INFO Environment - HHH000021: Bytecode provider name : javassist
-2018-07-09 15:58:14,144 [main] INFO Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2018-07-09 15:58:14,380 [main] INFO Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2018-07-09 15:58:15,120 [main] INFO SchemaUpdate - HHH000228: Running hbm2ddl schema update
-2018-07-09 15:58:15,378 [main] INFO LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2018-07-09 15:58:16,007 [main] INFO RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2125ad3: startup date [Mon Jul 09 15:58:09 CST 2018]; root of context hierarchy
-2018-07-09 15:58:16,149 [main] INFO RequestMappingHandlerMapping - Mapped "{[/index]}" onto public java.lang.String com.mg.controller.TestController.index(org.springframework.ui.Model)
-2018-07-09 15:58:16,155 [main] INFO RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-07-09 15:58:16,156 [main] INFO RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-07-09 15:58:16,228 [main] INFO SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-07-09 15:58:16,229 [main] INFO SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-07-09 15:58:16,320 [main] INFO SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-07-09 15:58:17,302 [main] INFO OptionalLiveReloadServer - LiveReload server is running on port 35729
-2018-07-09 15:58:17,500 [main] INFO AnnotationMBeanExporter - Registering beans for JMX exposure on startup
-2018-07-09 15:58:17,543 [main] INFO Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2018-07-09 15:58:17,557 [main] INFO Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2018-07-09 15:58:17,583 [main] INFO NioSelectorPool - Using a shared selector for servlet write/read
-2018-07-09 15:58:17,622 [main] INFO TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
-2018-07-09 15:58:17,633 [main] INFO Application - Started Application in 9.741 seconds (JVM running for 18.446)
-2018-07-09 16:00:59,715 [http-nio-8080-exec-1] INFO [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
-2018-07-09 16:00:59,715 [http-nio-8080-exec-1] INFO DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
-2018-07-09 16:00:59,757 [http-nio-8080-exec-1] INFO DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 41 ms
-2018-07-09 16:01:08,721 [http-nio-8080-exec-1] INFO TestController - info访问首页
-2018-07-09 16:01:08,721 [http-nio-8080-exec-1] WARN TestController - warn访问首页
-2018-07-09 16:01:08,722 [http-nio-8080-exec-1] ERROR TestController - error访问首页
-2018-07-09 16:01:08,753 [http-nio-8080-exec-1] INFO TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
-2018-07-09 16:01:08,878 [http-nio-8080-exec-1] INFO AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
-2018-07-09 16:01:08,878 [http-nio-8080-exec-1] INFO AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
-2018-07-09 16:01:08,878 [http-nio-8080-exec-1] INFO AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
-2018-07-09 16:01:08,878 [http-nio-8080-exec-1] INFO AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
-2018-07-09 16:01:08,883 [http-nio-8080-exec-1] INFO CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+2018-08-09 17:38:10,026 [main] INFO Version - HHH000412: Hibernate Core {5.0.12.Final}
+2018-08-09 17:38:10,029 [main] INFO Environment - HHH000206: hibernate.properties not found
+2018-08-09 17:38:10,032 [main] INFO Environment - HHH000021: Bytecode provider name : javassist
+2018-08-09 17:38:10,269 [main] INFO Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-08-09 17:38:10,737 [main] INFO Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2018-08-09 17:38:11,239 [main] WARN UUIDHexGenerator - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2018-08-09 17:38:12,284 [main] INFO SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2018-08-09 17:38:13,076 [main] INFO LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-08-09 17:38:13,083 [main] INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'entityManagerFactory' of type [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-09 17:38:13,099 [main] INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'entityManagerFactory' of type [com.sun.proxy.$Proxy91] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-09 17:38:13,138 [main] INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#1e1ea16d' of type [com.sun.proxy.$Proxy92] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-09 17:38:13,255 [main] INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jpaMappingContext' of type [org.springframework.data.jpa.repository.config.JpaMetamodelMappingContextFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-09 17:38:13,263 [main] INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jpaMappingContext' of type [org.springframework.data.jpa.mapping.JpaMetamodelMappingContext] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-09 17:38:13,728 [main] INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userRepository' of type [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-09 17:38:13,745 [main] INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userRepository' of type [com.sun.proxy.$Proxy95] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-09 17:38:13,807 [main] INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'myRealm' of type [com.mg.common.config.shiro.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-09 17:38:13,887 [main] INFO ShiroConfiguration - securityManager注册完成
+2018-08-09 17:38:13,916 [main] INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-09 17:38:13,986 [main] INFO ShiroConfiguration - shiroFilter注册完成
+2018-08-09 17:38:14,957 [main] INFO TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 80 (http)
+2018-08-09 17:38:14,988 [main] INFO StandardService - Starting service [Tomcat]
+2018-08-09 17:38:14,990 [main] INFO StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-08-09 17:38:15,511 [localhost-startStop-1] INFO [/mg] - Initializing Spring embedded WebApplicationContext
+2018-08-09 17:38:15,512 [localhost-startStop-1] INFO ContextLoader - Root WebApplicationContext: initialization completed in 12082 ms
+2018-08-09 17:38:16,216 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-09 17:38:16,217 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-09 17:38:16,217 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-09 17:38:16,217 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-09 17:38:16,218 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'MyFilter' to urls: [/*]
+2018-08-09 17:38:16,218 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'shiroFilter' to: [/*]
+2018-08-09 17:38:16,218 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'remoteIpFilter' to: [/*]
+2018-08-09 17:38:16,218 [localhost-startStop-1] INFO ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-08-09 17:38:17,918 [main] INFO RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5580d62f: startup date [Thu Aug 09 17:38:03 CST 2018]; root of context hierarchy
+2018-08-09 17:38:18,141 [main] INFO RequestMappingHandlerMapping - Mapped "{[/doRegister]}" onto public org.springframework.http.ResponseEntity com.mg.controller.index.LoginController.doRegister()
+2018-08-09 17:38:18,146 [main] INFO RequestMappingHandlerMapping - Mapped "{[/doLogin]}" onto public org.springframework.http.ResponseEntity com.mg.controller.index.LoginController.doLogin(javax.servlet.http.HttpServletRequest)
+2018-08-09 17:38:18,146 [main] INFO RequestMappingHandlerMapping - Mapped "{[/logout]}" onto public java.lang.String com.mg.controller.index.LoginController.loginOut()
+2018-08-09 17:38:18,147 [main] INFO RequestMappingHandlerMapping - Mapped "{[/login]}" onto public java.lang.String com.mg.controller.index.LoginController.toLogin()
+2018-08-09 17:38:18,147 [main] INFO RequestMappingHandlerMapping - Mapped "{[/register]}" onto public java.lang.String com.mg.controller.index.LoginController.toRegister()
+2018-08-09 17:38:18,152 [main] INFO RequestMappingHandlerMapping - Mapped "{[/index]}" onto public java.lang.String com.mg.controller.TestController.index(org.springframework.ui.Model,java.lang.String,java.lang.String)
+2018-08-09 17:38:18,153 [main] INFO RequestMappingHandlerMapping - Mapped "{[/addOne]}" onto public org.springframework.http.ResponseEntity com.mg.controller.TestController.addOne()
+2018-08-09 17:38:18,154 [main] INFO RequestMappingHandlerMapping - Mapped "{[/home]}" onto public java.lang.String com.mg.controller.TestController.home()
+2018-08-09 17:38:18,154 [main] INFO RequestMappingHandlerMapping - Mapped "{[/addRole]}" onto public org.springframework.http.ResponseEntity com.mg.controller.TestController.addUser(com.mg.beans.Temp,com.mg.beans.RoleEntity)
+2018-08-09 17:38:18,154 [main] INFO RequestMappingHandlerMapping - Mapped "{[/auth/doLogin]}" onto public org.springframework.http.ResponseEntity com.mg.controller.TestController.doLogin(javax.servlet.http.HttpServletRequest)
+2018-08-09 17:38:18,155 [main] INFO RequestMappingHandlerMapping - Mapped "{[/auth/logout]}" onto public java.lang.String com.mg.controller.TestController.loginOut()
+2018-08-09 17:38:18,156 [main] INFO RequestMappingHandlerMapping - Mapped "{[/auth/login]}" onto public java.lang.String com.mg.controller.TestController.toLogin()
+2018-08-09 17:38:18,157 [main] INFO RequestMappingHandlerMapping - Mapped "{[/admin]}" onto public java.lang.String com.mg.controller.TestController.admin()
+2018-08-09 17:38:18,160 [main] INFO RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-09 17:38:18,161 [main] INFO RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-09 17:38:18,278 [main] INFO SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-09 17:38:18,278 [main] INFO SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-09 17:38:18,336 [main] INFO ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandle
+2018-08-09 17:38:18,404 [main] INFO SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-09 17:38:21,928 [main] INFO OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-08-09 17:38:22,561 [main] INFO AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-08-09 17:38:22,649 [main] INFO Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2018-08-09 17:38:22,670 [main] INFO Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2018-08-09 17:38:22,713 [main] INFO NioSelectorPool - Using a shared selector for servlet write/read
+2018-08-09 17:38:22,997 [main] INFO TomcatEmbeddedServletContainer - Tomcat started on port(s): 80 (http)
+2018-08-09 17:38:23,155 [main] INFO Application - Started Application in 22.232 seconds (JVM running for 31.648)
+2018-08-09 17:38:52,632 [http-nio-80-exec-10] INFO [/mg] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-09 17:38:52,633 [http-nio-80-exec-10] INFO DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-09 17:38:52,690 [http-nio-80-exec-10] INFO DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 57 ms
+2018-08-09 17:38:52,996 [http-nio-80-exec-9] INFO TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-08-09 17:38:53,109 [http-nio-80-exec-9] INFO AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-08-09 17:38:53,109 [http-nio-80-exec-9] INFO AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-08-09 17:38:53,110 [http-nio-80-exec-9] INFO AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-08-09 17:38:53,110 [http-nio-80-exec-9] INFO AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-08-09 17:38:53,113 [http-nio-80-exec-9] INFO CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
 [THYMELEAF] * Cache Factory implementation: [no caches]
 [THYMELEAF] * Template modes:
-[THYMELEAF]     * XML
-[THYMELEAF]     * HTML5
 [THYMELEAF]     * VALIDXHTML
-[THYMELEAF]     * LEGACYHTML5
-[THYMELEAF]     * XHTML
-[THYMELEAF]     * VALIDXML
-[THYMELEAF] * Template resolvers (in order):
-[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
-[THYMELEAF] * Message resolvers (in order):
-[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
-[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
-[THYMELEAF]     * Prefix: "th"
-[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
-[THYMELEAF]     * Prefix: "layout"
-[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
-2018-07-09 16:01:08,884 [http-nio-8080-exec-1] INFO TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
-2018-07-09 16:02:06,808 [main] INFO Application - Starting Application on WINDOWS-UNEE9VK with PID 3940 (F:\IDEAWorkSpace\MGMavenTest\target\classes started by Administrator in F:\IDEAWorkSpace\MGMavenTest)
-2018-07-09 16:02:06,813 [main] INFO Application - No active profile set, falling back to default profiles: default
-2018-07-09 16:02:07,136 [background-preinit] INFO Version - HV000001: Hibernate Validator 5.3.6.Final
-2018-07-09 16:02:07,358 [main] INFO AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c4f4365: startup date [Mon Jul 09 16:02:07 CST 2018]; root of context hierarchy
-2018-07-09 16:02:10,764 [main] INFO TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
-2018-07-09 16:02:10,783 [main] INFO StandardService - Starting service [Tomcat]
-2018-07-09 16:02:10,785 [main] INFO StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
-2018-07-09 16:02:11,067 [localhost-startStop-1] INFO [/] - Initializing Spring embedded WebApplicationContext
-2018-07-09 16:02:11,067 [localhost-startStop-1] INFO ContextLoader - Root WebApplicationContext: initialization completed in 3709 ms
-2018-07-09 16:02:11,418 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-07-09 16:02:11,419 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-07-09 16:02:11,419 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-07-09 16:02:11,419 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
-2018-07-09 16:02:11,420 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'MyFilter' to urls: [/*]
-2018-07-09 16:02:11,420 [localhost-startStop-1] INFO FilterRegistrationBean - Mapping filter: 'remoteIpFilter' to: [/*]
-2018-07-09 16:02:11,420 [localhost-startStop-1] INFO ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
-2018-07-09 16:02:12,744 [main] INFO LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
-2018-07-09 16:02:12,767 [main] INFO LogHelper - HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2018-07-09 16:02:12,918 [main] INFO Version - HHH000412: Hibernate Core {5.0.12.Final}
-2018-07-09 16:02:12,920 [main] INFO Environment - HHH000206: hibernate.properties not found
-2018-07-09 16:02:12,922 [main] INFO Environment - HHH000021: Bytecode provider name : javassist
-2018-07-09 16:02:13,039 [main] INFO Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2018-07-09 16:02:13,315 [main] INFO Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2018-07-09 16:02:14,286 [main] INFO SchemaUpdate - HHH000228: Running hbm2ddl schema update
-2018-07-09 16:02:14,531 [main] INFO LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2018-07-09 16:02:15,181 [main] INFO RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c4f4365: startup date [Mon Jul 09 16:02:07 CST 2018]; root of context hierarchy
-2018-07-09 16:02:15,342 [main] INFO RequestMappingHandlerMapping - Mapped "{[/index]}" onto public java.lang.String com.mg.controller.TestController.index(org.springframework.ui.Model)
-2018-07-09 16:02:15,348 [main] INFO RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-07-09 16:02:15,348 [main] INFO RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-07-09 16:02:15,406 [main] INFO SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-07-09 16:02:15,407 [main] INFO SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-07-09 16:02:15,496 [main] INFO SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-07-09 16:02:16,499 [main] INFO OptionalLiveReloadServer - LiveReload server is running on port 35729
-2018-07-09 16:02:16,698 [main] INFO AnnotationMBeanExporter - Registering beans for JMX exposure on startup
-2018-07-09 16:02:16,741 [main] INFO Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2018-07-09 16:02:16,758 [main] INFO Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2018-07-09 16:02:16,782 [main] INFO NioSelectorPool - Using a shared selector for servlet write/read
-2018-07-09 16:02:16,825 [main] INFO TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
-2018-07-09 16:02:16,837 [main] INFO Application - Started Application in 10.889 seconds (JVM running for 17.216)
-2018-07-09 16:03:16,161 [http-nio-8080-exec-1] INFO [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
-2018-07-09 16:03:16,162 [http-nio-8080-exec-1] INFO DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
-2018-07-09 16:03:16,201 [http-nio-8080-exec-1] INFO DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 39 ms
-2018-07-09 16:03:16,442 [http-nio-8080-exec-1] INFO TestController - info访问首页
-2018-07-09 16:03:16,442 [http-nio-8080-exec-1] WARN TestController - warn访问首页
-2018-07-09 16:03:16,442 [http-nio-8080-exec-1] ERROR TestController - error访问首页
-2018-07-09 16:03:16,471 [http-nio-8080-exec-1] INFO TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
-2018-07-09 16:03:16,569 [http-nio-8080-exec-1] INFO AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
-2018-07-09 16:03:16,569 [http-nio-8080-exec-1] INFO AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
-2018-07-09 16:03:16,570 [http-nio-8080-exec-1] INFO AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
-2018-07-09 16:03:16,570 [http-nio-8080-exec-1] INFO AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
-2018-07-09 16:03:16,573 [http-nio-8080-exec-1] INFO CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
-[THYMELEAF] * Cache Factory implementation: [no caches]
-[THYMELEAF] * Template modes:
-[THYMELEAF]     * HTML5
-[THYMELEAF]     * VALIDXHTML
-[THYMELEAF]     * XHTML
 [THYMELEAF]     * XML
 [THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * HTML5
 [THYMELEAF]     * LEGACYHTML5
 [THYMELEAF] * Template resolvers (in order):
 [THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
@@ -515,4 +114,4 @@ expected <block end>, but found BlockMappingStart
 [THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
 [THYMELEAF]     * Prefix: "layout"
 [THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
-2018-07-09 16:03:16,573 [http-nio-8080-exec-1] INFO TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-08-09 17:38:53,113 [http-nio-80-exec-9] INFO TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED

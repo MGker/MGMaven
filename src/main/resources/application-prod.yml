@@ -1,0 +1,34 @@
+spring:
+    profiles: prod
+    thymeleaf:
+      prefix: classpath:/views/
+      mode: LEGACYHTML5
+    datasource:
+      url: jdbc:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=utf-8
+      username: root
+      password: zfj1121
+      driver-class-name: com.mysql.jdbc.Driver
+
+
+    jpa:
+      properties:
+        hibernate:
+          hbm2ddl.auto: update
+          dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        show-sql: true
+
+    mail:
+      host: smtp.qq.com
+      username: 1329605202@qq.com
+      default-encoding: UTF-8
+      password: uzrpkbouzjhogcec
+      port: 25
+      protocol: smtp
+mail:
+  fromMail:
+    addr: ${spring.mail.username}
+
+server:
+    port: 80
+    context-path: /mg
+

@@ -1,10 +1,11 @@
 package com.mg.beans;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import org.hibernate.annotations.GenericGenerator;
+
+import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Date;
+import java.util.List;
 
 /**
  * @ClassName User
@@ -12,12 +13,14 @@ import java.io.Serializable;
  * @Date 2018-06-25 17:34
  **/
 @Entity
-public class User implements Serializable {
+@Table(name="T_USER")
+public class UserEntity implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
-    @GeneratedValue
-    private Long id;
+    @GenericGenerator(name = "uuid", strategy = "uuid")
+    @GeneratedValue(generator = "uuid")
+    private String id;
 
     @Column(nullable = false, unique = true)
     private String userName;
@@ -31,27 +34,33 @@ public class User implements Serializable {
     @Column(nullable = false, unique = true)
     private String email;
 
-    @Column(nullable = true, unique = true)
-    private Integer sex;
+    @Column(nullable = true)
+    private Short sex;
 
     @Column(nullable = true, unique = true)
     private String phoneNum;
 
     @Column(nullable = false)
-    private String regTime;
+    private Date regTime;
 
     @Column(nullable = false)
-    private Integer status;
+    private Short status;
+
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinTable(name = "T_USER_ROLE",
+            joinColumns = {@JoinColumn(name = "user_id", referencedColumnName = "id")},
+            inverseJoinColumns = {@JoinColumn(name = "role_id", referencedColumnName ="roleID")})
+    private List<RoleEntity> roleList ;
 
     public static long getSerialVersionUID() {
         return serialVersionUID;
     }
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -87,11 +96,11 @@ public class User implements Serializable {
         this.email = email;
     }
 
-    public Integer getSex() {
+    public Short getSex() {
         return sex;
     }
 
-    public void setSex(Integer sex) {
+    public void setSex(Short sex) {
         this.sex = sex;
     }
 
@@ -103,19 +112,27 @@ public class User implements Serializable {
         this.phoneNum = phoneNum;
     }
 
-    public String getRegTime() {
+    public Date getRegTime() {
         return regTime;
     }
 
-    public void setRegTime(String regTime) {
+    public void setRegTime(Date regTime) {
         this.regTime = regTime;
     }
 
-    public Integer getStatus() {
+    public Short getStatus() {
         return status;
     }
 
-    public void setStatus(Integer status) {
+    public void setStatus(Short status) {
         this.status = status;
+    }
+
+    public List<RoleEntity> getRoleList() {
+        return roleList;
+    }
+
+    public void setRoleList(List<RoleEntity> roleList) {
+        this.roleList = roleList;
     }
 }
