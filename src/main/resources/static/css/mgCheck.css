@@ -1,0 +1,32 @@
+/**
+*auth:MG
+*description:用于构建好看的选框
+*/
+
+.mgCheck_label >.mgCheck{display: none}
+
+.mgCheck_label >span{
+    background-color: #fff;
+    border: 1px solid #259656;
+    padding: 7px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+}
+.mgCheck_label >span:active{
+    background-color:#259656;
+}
+.mgCheck_label>.mgCheck:checked +span{
+    background-color: #259656;
+    border: 1px solid #259656;
+    color: #99a1a7;
+}
+.mgCheck_label>.mgCheck:checked +span:after{
+   /* background-color: #259656;*/
+    content: '\2714';
+    font-size: 12px;
+    position: absolute;
+    top: -1px;
+    left: 2px;
+    color: #ffffff;
+}

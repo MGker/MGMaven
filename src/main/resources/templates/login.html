@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/css/mgCheck.css}">
+    <script th:src="@{/js/jquery-3.3.1.min.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+    <script th:src="@{/js/jquery.validate.min.js}"></script>
+    <title>登录页面</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("../img/5.jpg");
+            background-size: cover;
+            /*background-repeat: no-repeat;*/
+            background-attachment: fixed;
+        }
+
+        #formBox {
+            width: 400px;
+            background-color: rgba(225, 225, 225, 0.3);
+            top: 30%;
+            left: 35%;
+            margin: auto auto;
+            position: absolute;
+            padding: 30px 20px;
+            border-radius: 10px;
+        }
+
+        #formBox:hover {
+            box-shadow: 0 0 30px #fff;
+
+        }
+
+        #errorMess {
+            font-size: 10px;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <div id="formBox">
+        <form id="testForm"></form>
+        <form id="loginForm" th:action="@{doLogin}" onsubmit="return false">
+            <fieldset>
+                <legend><strong>用户登录</strong><span id="errorMess" class="col-xs-offset-2"></span></legend>
+            </fieldset>
+            <div class="form-group form-inline col-xs-10  col-xs-offset-2 ">
+                <input style="display:inline" class="form-control" name="userName" placeholder="用户名" autocomplete="off"/>
+
+            </div>
+            <div class="form-group form-inline col-xs-10 col-xs-offset-2">
+                <input style="display:inline" class="form-control" type="password" name="passWord" placeholder="密码"/>
+
+            </div>
+
+            <div class="form-group col-xs-12 text-center">
+                <input type="submit" class="btn btn-info" value="登陆"/>
+            </div>
+
+            <div class="">
+                <a class="col-xs-6 text-left" href="/forgetPasword">注册</a>
+                <a class="col-xs-6  text-right" href="/forgetPasword">找回密码</a>
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+    $(function () {
+        //表单验证
+        var validate = $("#loginForm").validate({
+            focusInvalid: false,
+            submitHandler: function (form) {
+                showLoginMess(0, "登陆中...")
+                var $form = $(form)
+                //alert("提交表单")
+                $.ajax({
+                    url: $form.attr('action'),
+                    type: "post",
+                    data: $form.serialize(),
+                    success: function (data) {
+                        console.log(JSON.stringify(data))
+                        if (data.code == 1) {
+                            console.log("登陆成功")
+                            showLoginMess(1, "登陆成功")
+                            //跳转主页面
+                            location.href = "../main";
+                        } else {
+                            var errorMess = data.message;
+                            console.log(errorMess)
+                            showLoginMess(-1, errorMess)
+                        }
+                    },
+                    error: function () {
+                        console.log("出现错误")
+                        showLoginMess(-1, "出现异常")
+                    }
+                })
+                return false;
+            },
+            rules: {
+                userName: {
+                    required: true
+                },
+                passWord: {
+                    required: true
+                }
+            },
+            messages: {
+                userName: "请输入用户名",
+                passWord: "请输入用户密码"
+            }
+        });
+
+
+    });
+
+    /*定义操作登陆信息提示栏内容的方法
+    * type:消息类型 -1:失败 0:等待 1:成功
+    * mess:消息内容
+    * */
+    function showLoginMess(type, mess) {
+        var $errorMess = $("#errorMess");
+        $errorMess.removeClass("glyphicon glyphicon-remove glyphicon-ok")
+        if (type == -1) {
+            $errorMess.addClass("glyphicon glyphicon-remove")
+            $errorMess.css("color", "red")
+        } else if (type == 0) {
+            $errorMess.css("color", "yellow")
+        } else if (type == 1) {
+            $errorMess.addClass("glyphicon glyphicon-ok")
+            $errorMess.css("color", "green")
+        }
+        if (mess != null || mess != "")
+            $errorMess.text(mess);
+    }
+
+    /**
+     * 定义记住用户账号密码的方法
+     */
+    function remberUser() {
+        //
+    }
+</script>
+</html>

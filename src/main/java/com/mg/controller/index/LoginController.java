@@ -1,5 +1,6 @@
 package com.mg.controller.index;
 
+import com.mg.beans.UserEntity;
 import com.mg.common.Result;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
@@ -22,6 +23,7 @@ import javax.servlet.http.HttpServletRequest;
  * @Description: 包含 用户 登录,登出,注册 接口
  */
 @Controller
+@RequestMapping("auth")
 public class LoginController {
     private Logger log = LoggerFactory.getLogger(this.getClass());
 
@@ -31,9 +33,11 @@ public class LoginController {
     }
 
     @RequestMapping("/doLogin")
-    public ResponseEntity doLogin(HttpServletRequest request){
+    public ResponseEntity doLogin(HttpServletRequest request,UserEntity user){
         String userCode = (String)request.getParameter("username");
+        userCode = user.getUserName();
         String userPwd = (String)request.getParameter("password");
+        userPwd = user.getPassWord();
         // shiro认证
         Subject subject = SecurityUtils.getSubject();
         UsernamePasswordToken token = new UsernamePasswordToken(userCode, userPwd);
@@ -42,15 +46,21 @@ public class LoginController {
         try {
             subject.login(token);
             result.setMessage("登录成功");
+            result.setCode(1);
         } catch (UnknownAccountException e) {
             log.info("账户不存在");
-            result.setMessage("账户不存在");
+            result.setCode(0);
+            result.setMessage("用户名或密码错误");
         } catch (DisabledAccountException e) {
             log.info("账户被禁用");result.setMessage("该账户被禁用");
+            result.setCode(0);
         } catch (AuthenticationException e) {
-            log.info("密码错误");result.setMessage("密码错误");
+            log.info("密码错误");
+            result.setMessage("用户名或密码错误");
+            result.setCode(0);
         } catch (Exception e) {
             log.info("登陆异常,请稍后重试", e);result.setMessage("登陆异常,请稍后重试");
+            result.setCode(-1);
         }
 
         return new ResponseEntity(result,HttpStatus.OK);

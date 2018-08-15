@@ -76,56 +76,10 @@ public ResponseEntity addOne(){
         roleRepositoty.disableRoleById(id);
         return new ResponseEntity(HttpStatus.OK);
     }*/
-    @RequestMapping("/auth/login")
+    @RequestMapping("/websocketTest")
     public String toLogin(){
-        return "login";
+        return "websocket/websocketClient";
     }
 
-    @RequestMapping("/auth/doLogin")
-    public ResponseEntity doLogin(HttpServletRequest request){
-        String userCode = (String)request.getParameter("username");
-        String userPwd = (String)request.getParameter("password");
-        // shiro认证
-        Subject subject = SecurityUtils.getSubject();
-        UsernamePasswordToken token = new UsernamePasswordToken(userCode, userPwd);
-        Result result = new Result();
-        result.setSuccess(true);
-        try {
-            subject.login(token);
-            result.setMessage("登录成功");
-        } catch (UnknownAccountException e) {
-            log.info("账户不存在");
-            result.setMessage("賬戶不存在");
-        } catch (DisabledAccountException e) {
-            log.info("账户存在问题");result.setMessage("账户存在问题");
-        } catch (AuthenticationException e) {
-           log.info("密码错误");result.setMessage("密码错误");
-        } catch (Exception e) {
-            log.info("登陆异常", e);result.setMessage("登陆异常");
-        }
 
-        return new ResponseEntity(result,HttpStatus.OK);
-    }
-
-    @RequestMapping("/home")
-    public String home(){
-
-
-        return  "home";
-    }
-
-    @RequestMapping("/auth/logout")
-    public String loginOut(){
-        Subject subject = SecurityUtils.getSubject();
-        subject.logout();
-        return "/login";
-    }
-
-    @RequestMapping("/admin")
-    @ResponseBody
-    public String admin(){
-        Subject subject = SecurityUtils.getSubject();
-        boolean hasRole = subject.hasRole("guest");
-        return "has admin:"+hasRole;
-    }
 }
