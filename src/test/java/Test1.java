@@ -8,10 +8,9 @@ import java.util.TimerTask;
  */
 public class Test1 {
     static int n = 0;
+    static boolean flag;
     public static void main(String[] args) throws  Exception{
-        Integer i = null;
-        int j = i;
-        System.out.println(j);
+        System.out.println(flag);
 
     }
     public static void m1(){
