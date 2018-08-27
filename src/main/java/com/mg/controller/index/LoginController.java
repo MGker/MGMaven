@@ -67,7 +67,7 @@ public class LoginController {
     }
 
     @RequestMapping("/logout")
-    public String loginOut(){
+    public String logOut(){
         Subject subject = SecurityUtils.getSubject();
         subject.logout();
         return "/login";
@@ -85,6 +85,5 @@ public class LoginController {
 
         return new ResponseEntity(HttpStatus.CREATED);
     }
-
 
 }

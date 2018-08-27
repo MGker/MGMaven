@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:src="@{/css/mainPage.css}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <script th:src="@{/js/jquery-3.3.1.min.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+   <title>主页面</title>
+</head>
+
+<style>
+    html{
+        height:100%;
+    }
+    body{
+        margin:0;
+        height:100%;
+        background-image: url("img/5.jpg");
+        background-attachment: fixed;
+    }
+    .mg_left{
+        background-color:rgba(39, 58, 74, 0.8);
+        width:220px;
+        height:100%;
+    }
+    .mg_contain{
+        height: 100%;
+        background-color: rgba(173, 173, 173, 0.07);
+        margin-left:220px;
+        top:0;
+        height:100%;
+        width:calc(100% - 220px);
+        position:absolute;
+    }
+
+    .mg_left .mg_nav-header{
+
+    }
+
+    .mg_contain .mg_head{
+
+    }
+
+</style>
+
+<body>
+    <div class="mg_left">
+        <div class="mg_nav-header"></div>
+        <div class="mg_nav-menuBox"></div>
+    </div>
+    <div class="mg_contain">
+        <div class="mg_head"></div>
+        <div class="mg_center">
+            <!--<iframe></iframe>-->
+            <div></div>
+        </div>
+    </div>
+    <div class="mg_font"></div>
+</body>
+
+
+</html>
