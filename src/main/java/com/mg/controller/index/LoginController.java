@@ -70,20 +70,22 @@ public class LoginController {
     public String logOut(){
         Subject subject = SecurityUtils.getSubject();
         subject.logout();
-        return "/login";
+        return "vielogin";
     }
 
     @RequestMapping("/register")
     public String toRegister(){
-
-        return "register";
+        return "viewRegister";
     }
 
     @RequestMapping("doRegister")
     public ResponseEntity doRegister(){
-
-
         return new ResponseEntity(HttpStatus.CREATED);
+    }
+
+    @RequestMapping("forgetPass")
+    public String forgetPass(){
+        return "viewForgetPass";
     }
 
 }

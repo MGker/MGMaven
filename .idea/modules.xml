@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MGMaven.iml" filepath="$PROJECT_DIR$/MGMaven.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../yuyin/yuyin.iml" filepath="$PROJECT_DIR$/../yuyin/yuyin.iml" />
     </modules>
   </component>
 </project>

@@ -135,4 +135,20 @@ public class UserEntity implements Serializable {
     public void setRoleList(List<RoleEntity> roleList) {
         this.roleList = roleList;
     }
+
+    @Override
+    public String toString() {
+        return "UserEntity{" +
+                "id='" + id + '\'' +
+                ", userName='" + userName + '\'' +
+                ", passWord='" + passWord + '\'' +
+                ", nickName='" + nickName + '\'' +
+                ", email='" + email + '\'' +
+                ", sex=" + sex +
+                ", phoneNum='" + phoneNum + '\'' +
+                ", regTime=" + regTime +
+                ", status=" + status +
+                ", roleList=" + roleList +
+                '}';
+    }
 }

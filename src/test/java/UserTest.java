@@ -29,11 +29,11 @@ public class UserTest {
    // @Transactional
     public void insertUser(){
         UserEntity u1 = new UserEntity();
-        u1.setUserName("mgker");
-        u1.setNickName("萌客");
-        String password=new SimpleHash("MD5","111",u1.getUserName(),2).toHex();
+        u1.setUserName("mgker1");
+        u1.setNickName("萌客1");
+        String password=new SimpleHash("MD5","123456",u1.getUserName(),2).toHex();
         u1.setPassWord(password);
-        u1.setEmail("123456@qq.com");
+        u1.setEmail("1234567@qq.com");
         u1.setRegTime(new Date());
         u1.setSex((short)1);
         u1.setStatus((short)1);
